@@ -1,0 +1,56 @@
+body {
+    background-color: grey;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+.object1 {
+    grid-area: Header;
+}
+.object2 {
+    grid-area: Menu;
+}
+.object3 {
+    grid-area: Main;
+}
+.object4 {
+    grid-area: Right;
+}
+.object5 {
+    grid-area: Footer;
+}
+container {
+    display: grid;
+    grid-template-areas: 
+    'a a s'
+    'a a s'
+    'd f f'
+    'd g g';
+    gap: 10px;
+    margin: auto;
+    width: 50%;
+}
+.object1 {
+    background-color: hwb(14 13% 9% / 0.979);
+    grid-area: a;
+}
+.object2 {
+    background-color: rgb(252, 181, 4);
+    grid-area: s;
+}
+.object3 {
+    background-color: rgb(94, 197, 94);
+    grid-area: d;
+}
+.object4 {
+    background-color: rgb(42, 192, 238);
+    grid-area: f;
+}
+.object5 {
+    background-color: rgb(42, 192, 238);
+    grid-area: g;
+}
+container div {
+    padding: 2em;
+    text-align: center;
+}

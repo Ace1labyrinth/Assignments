@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Registration Page
+    </title>
+    <head>
+        
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+            }
+            * {
+                box-sizing: border-box;
+            }
+        
+            .container {
+                padding: 15px;
+                background-color: white;
+            }
+            
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: whitesmoke;
+
+            }
+            
+    
+    
+            input[type=text]:focus,
+            input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+        
+            hr {
+                border: 1px solid whitesmoke;
+                margin-bottom: 25px;
+
+            }
+            
+            .registerbtn {
+                background-color: rgba(0, 128, 0, 0.61);
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor:pointer;
+                width: 100%;
+                opacity: 0.9;
+                font-size: 1em;
+            }
+            .registerntn:hover {
+                opacity: 1;
+            }
+            /* Add a blue text color to links */
+            a {
+                color: blue;
+            }
+            /* Set a grey background color and center the text of the "sign in" section */
+            .signin {
+                background-color: whitesmoke;
+                text-align: center;
+            }
+            .blue{
+                background-color:blue;
+            }
+            .pink{
+                background-color:pink;
+            }
+            .red{
+                background-color:red;
+            }
+            .purple{
+                background-color:purple;
+            }
+            .white{
+                background-color:white;
+            }
+            .green{
+                background-color:green;
+            }
+            .indigo{
+                background-color:indigo;
+            }
+            input[type="date"]{
+                width: 100%;
+                height: 3em;
+                border: none;
+                background-color: whitesmoke;
+                padding:15px;
+                margin: 5px 0 22px 0;
+            }
+            select {
+                width: 100%;
+                height: 3em;
+                background-color: whitesmoke;
+                border: none;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form action>
+            <div class="container">
+                <h1>Registration</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="F-name"><b>First Name</b></label>
+        <input type="text" placeholder="Enter first name" name="name" id="name" required>
+        <label for="L-name"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter last name" name="name" id="name" required>
+        <label for="P.number"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter number" name="number" id="number" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <label for="C.selector"><b>Favorite color:</b></label>
+        <input type="color" name="favoriteColor" required="rgb">
+        
+        <br>
+        <br>
+        <label for="gender"><b>Gender: </b></label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose your Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <br>
+          <br>
+        <label for="DOB"><b>Date of Birth</b></label>
+        <input type="date" name="dateOfBirth" required="">
+        <hr>
+        <p>By creating an account you aggree to our <a href="#">Terms & Privacy</a>.</p>
+
+       <button type="Submit" class="registerbtn">Register</button>
+        <div class="container signing">
+            <p>Already have an account? <a href="logininfo.html">Login here!</a>. </p>
+            
+        </div>
+    </form>
+
+            </div>
+            
+        
+
+        
+
+    </body>
+</html>

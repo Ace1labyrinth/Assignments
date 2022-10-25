@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <style>
+    body {
+      background-color: #1a1a1a
+    }
+    @-webkit-keyframes greenpulse{
+      from {-webkit-box-shadow: 0 0 1px #AFE30E;}
+      50% {-webkit-box-shadow: 0 0 18px #91bd09;}
+      to {-webkit-box-shadow: 0 0 9px #8FB518;}
+      
+    }
+    p.text {
+      font-size: 2em;
+color: #ffffff;
+position: absolute;
+text-align: center;
+padding-top: 44px;
+padding-left: 61px;
+padding-right: 61px;
+    }
+    div.circle {
+      margin: 100px auto;
+width: 200px;
+height: 200px;
+    }
+    .circle {
+      -moz-border-radius: 200px/200px;
+-webkit-border-radius: 200px 200px;
+border-radius: 200px/200px;
+border: 1px solid #91bd09;
+width: 200px;
+height: 200px;
+outline: none;
+-webkit-animation-name: greenpulse;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: infinite;
+
+    }
+    .circle:hover {
+      box-shadow: 0 0 2px #91bd09;
+-webkit-box-shadow: 0 0 2px #91bd09;
+-moz-box-shadow: 0 0 2px #91bd09;
+border: 1px solid #91bd09;
+    }
+  </style>
+<body>
+  <div class="circle">
+    <p class="text">A.C.E</p>
+  </div>
+  </body>
+</html>
+    
